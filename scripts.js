@@ -34,12 +34,16 @@ document.getElementById('btnAbout').addEventListener('click', () => {
 });
 
 // Event listener for Projects button
+// THIS IS WHERE YOU ADD MORE BUTTONS FOR WHEN U ADD PROJECTS
 document.getElementById('btnProjects').addEventListener('click', () => {
     const projectsDirectory = `
+    
         <h6 class='fade-in'>Here are some projects I have made over the years! Click on a project to see details:</h6>
         <div id="projectButtons">
             <button class="btn btn-secondary fade-in" id="btnTorontoHouseListing">Toronto House Listing Analysis</button>
-            <button class="btn btn-secondary fade-in" id="btnAnotherProject">SoundCheck</button>
+            <button class="btn btn-secondary fade-in" id="btnSoundCheck">SoundCheck</button>
+            <button class="btn btn-secondary fade-in" id="btnCalorieCalculator">Carlorie Calculator</button>
+
         </div>
         <div id="projectDetails" class='fade-in'></div>
     `;
@@ -68,7 +72,7 @@ document.getElementById('btnProjects').addEventListener('click', () => {
         });
 
        // SoundCheck
-        document.getElementById('btnAnotherProject').addEventListener('click', () => {
+        document.getElementById('btnSoundCheck').addEventListener('click', () => {
             const soundCheck = `
                 <section class='fade-in'>
                     <h3>SoundCheck</h3>
@@ -88,7 +92,29 @@ document.getElementById('btnProjects').addEventListener('click', () => {
             fadeOutAndUpdate(document.getElementById('projectDetails'), soundCheck);
         });
 
+        // Calorie Calculator
+        document.getElementById('btnCalorieCalculator').addEventListener('click', () => {
+            const calorieCalculator = `
+                <section class='fade-in'>
+                    <h3>Calorie Calculator</h3>
+                    <p>This was a personal project I made back in the summer of 2023. I am very into fitness if you have seen in my about page and nutrition goes hand in hand.
+                    So I wanted to create a program that would give me the amount of calories based on a food item and its weight. This project was something practical and also cool to make as it was one of the first personal projects of mine.<br><br>
+        
+                    For this project, I used <strong>HTML, CSS, and Python,</strong> to create a user-friendly interface. I also used the <strong>Flask</strong> framework for the backend.<br><br>
+
+                    What I enjoyed about this project was using an API for the first time. I used an API that had a catalog of over <strong>900 thousand</strong> food items that had many things related to the item, for example the nutritional value, macros, and of course, calories (per serving).
+                    I was able to make an interesting and practical project that aligned with my values and introduced me to the world of APIs. <br><br>
+        
+                    You can find more information on this project on my GitHub <a href='https://github.com/CarandangC/Carlorie-Calculator' target='_blank'>here</a>.</p>
+                </section>
+            `;
+            fadeOutAndUpdate(document.getElementById('projectDetails'), calorieCalculator);
+        });
+
         // Copy paste this if you need to add more projects!
+        // Change the 'btnAnotherProject' to another name (ex. btn(name of project)) and then add that 
+        // variable in the button navigation tab (line 40)
+        // Can the the constant to anything, just make sure to change it in the fadeoutandupdateline
         
         // document.getElementById('btnAnotherProject').addEventListener('click', () => {
         //     const anotherProjectDetails = `
