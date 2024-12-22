@@ -1,6 +1,10 @@
 /* Add this to styles.css for a simple fade-in animation */
 .fade-in {
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.25s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -10,4 +14,19 @@
     100% {
         opacity: 1;
     }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
 }
