@@ -42,6 +42,7 @@ document.getElementById('btnProjects').addEventListener('click', () => {
             <button class="btn btn-secondary fade-in" id="btnTorontoHouseListing">Toronto House Listing Analysis</button>
             <button class="btn btn-secondary fade-in" id="btnSoundCheck">SoundCheck</button>
             <button class="btn btn-secondary fade-in" id="btnCalorieCalculator">Carlorie Calculator</button>
+            <button class="btn btn-secondary fade-in" id="btnPortfolioSite">Portfolio Website</button>
 
         </div>
         <div id="projectDetails" class='fade-in'></div>
@@ -109,6 +110,27 @@ document.getElementById('btnProjects').addEventListener('click', () => {
             `;
             fadeOutAndUpdate(document.getElementById('projectDetails'), calorieCalculator);
         });
+
+        // Portfolio Website
+        document.getElementById('btnPortfolioSite').addEventListener('click', () => {
+            const portfolioSite = `
+                <section class='fade-in'>
+                    <h3>Portfolio Website</h3>
+                    <p>This is a project I started in Winter of 2024 and still updating regularly whenever I need to add new experiences or projects.<br><br>
+
+                    I built this project because I always wanted to have a place where I could showcase my projects, and also to have another project that provides some sort of real life application and use.<br><br>
+
+                    This project uses <strong>HTML, CSS, Javascript, and the Bootstrap framework.</strong><br><br>
+                    What I enjoy(ed) about creating this project is that I have full control on how I design my website. Personally, I don't think I'm a very creative person, but making this website showed me how creative I could be, 
+                    weather that is the theme, the layout, or just ideas on what things I could do to make it better (I was thinking a dark mode, don't ya think?).<br><br>
+
+                    You can find the Github repo <a href='https://github.com/CarandangC/CarandangC.github.io'target='_blank'>here</a>.
+                    </p>
+                </section>
+            `;
+            fadeOutAndUpdate(document.getElementById('projectDetails'), portfolioSite);
+        });
+
 
         // Copy paste this if you need to add more projects!
         // Change the 'btnAnotherProject' to another name (ex. btn(name of project)) and then add that 
