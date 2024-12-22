@@ -12,11 +12,6 @@ function fadeOutAndUpdate(targetElement, newContent) {
     }, 250); // Match the fade-out duration in CSS
 }
 
-// Dark Mode Toggle
-document.getElementById('toggleDarkMode').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
-
 // About Me Section
 document.getElementById('btnAbout').addEventListener('click', () => {
     const aboutMeContent = `
