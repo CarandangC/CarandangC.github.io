@@ -27,5 +27,26 @@ document.getElementById('btnAbout').addEventListener('click', () => {
 
 document.getElementById('btnProjects').addEventListener('click', () => {
     // Add content for the Projects section
-    outputDiv.textContent = "I am passionate about creating meaningful projects that apply my knowledge to solve real-life problems. Check out my GitHub for more!";
+    const projectsDirectory = `<p class='fade-in'>Here are some projects I have made over the years!`;
+    const torontoWebScrape = `
+    <section class='fade-in'>
+    <h3>Toronto House listing analysis</h3>
+    <p>This was a project I made in the summer of 2023. Because I am interested in data analyatics, I decided to make this project to get some
+    hands on experience on webscraping (data collection), data organziation, and data visualization.<br><br>
+    For this project I webscrapped house listings in Toronto, Ontario using Python and multiple frameworks. This includes
+    Beautiful Soup (for webscraping), Pandas, Matplotlib, and Numpy (to organize, clean, and present data in a visually appealing way).<br><br>
+    I had two hypotheses for this project. I wanted to know if the location of the listing would increase relative to how close it was to downtown Toronto
+    and if the number of bedrooms and bathrooms would increase the price of the listing. <br><br>
+    After gathering all the information I needed to see if this was true,
+    the data indeed proved that the closer the house was to downtown Toronto, the higher the price. Additionally, the number of bedrooms and bathrooms also had a positive correlation with the price of the listing.<br><br>
+    This project helped me gain a deeper understanding of data analytics and the real estate market in Toronto. You can find the full project and code on my <a href='https://github.com/CarandangC/Toronto-Market-Webscraper' target='_blank'>GitHub</a>.</p>
+    </section>`
+    ;
+
+    outputDiv.innerHTML = projectsDirectory + torontoWebScrape ;
+
+
+
+
+
 });
