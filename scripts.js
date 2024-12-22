@@ -33,11 +33,10 @@ document.getElementById('btnAbout').addEventListener('click', () => {
     fadeOutAndUpdate(outputDiv, aboutMeContent);
 });
 
-// Event listener for Projects button
+// Projects Section
 // THIS IS WHERE YOU ADD MORE BUTTONS FOR WHEN U ADD PROJECTS
 document.getElementById('btnProjects').addEventListener('click', () => {
     const projectsDirectory = `
-    
         <h6 class='fade-in'>Here are some projects I have made over the years! Click on a project to see details:</h6>
         <div id="projectButtons">
             <button class="btn btn-secondary fade-in" id="btnTorontoHouseListing">Toronto House Listing Analysis</button>
@@ -128,4 +127,40 @@ document.getElementById('btnProjects').addEventListener('click', () => {
 
 
     }, 250); // Wait for fade-out before adding event listeners
+});
+
+// Experience Section
+document.getElementById('btnExperience').addEventListener('click', () => {
+    const experienceDirectory = `
+        <h6 class='fade-in'>Here is where you can find previous internships I have done:</h6>
+        <div id="experienceButtons">
+            <button class="btn btn-secondary fade-in" id="btneCommerceAdvisor">Ontario Chamber of Commerce</button>
+        </div>
+        <div id="experienceDetails" class='fade-in'></div>
+    `;
+    fadeOutAndUpdate(outputDiv, experienceDirectory);
+
+    setTimeout(() => {
+        document.getElementById('btneCommerceAdvisor').addEventListener('click', () => {
+            const eCommerceAdvisor = `
+                <section class='fade-in'>
+                    <h3>E-Commerce Advisor (Sept 2023 - Dec 2023)</h3>
+                    <p>As an E-Commerce Advisor for the Ontario Chamber of Commerce, I supported over 50 small businesses in navigating the Canada Digital Adoption Program (CDAP) 
+                    and enhancing their digital presence. <br><br>
+                    My role involved guiding businesses through grant applications, providing tailored digital adoption strategies, and addressing inquiries related to e-commerce, website updates, and social media marketing. 
+                    I also maintained accurate records, tracked program outcomes, and optimized Excel sheets to ensure data accuracy. <br><br>
+                    This experience sharpened my skills in customer service, problem-solving, and digital transformation within the small business sector.</p>
+
+                    <a href='https://occ.ca/' target='_blank'>Link to the OCC Website</a>'
+                    <br>
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEq_xkf346LN5OrhGB8HAETmfeC4uwWxv3A&s'>
+                </section>
+                `;
+
+            fadeOutAndUpdate(document.getElementById('experienceDetails'), eCommerceAdvisor);
+        });
+
+
+    }, 250);
+
 });
