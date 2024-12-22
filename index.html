@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,9 @@
 
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-center">
         <div class="container-fluid">
             <!-- Brand/Logo -->
             <a class="navbar-brand" href="#">Carlos Carandang</a>
@@ -45,60 +47,80 @@
             <!-- Left Column: Tech Stack, Resume, Photo of me-->
             <div class="col-md-4 text-center">
                 <section>
-                
-                <img src="CarlosC47352.jpg" alt="Picture of me!" class="img-fluid rounded-circle mb-3" />
-                <p>Welcome to my website!</p>
-                <h4>Resume</h4>
-                <a href="Carlos_Carandang_Resume.pdf" download="Carlos_Carandang_Resume.pdf" class="btn btn-primary mb-3 w-100">Download PDF File</a>
-                
-                <section id="tech-stack" class="text-center">
-                    <h4>Tech Stack</h4>
 
-                    <!-- Dropdown Menu for Tech Stack -->
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Languages
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Python</a></li>
-                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                            <li><a class="dropdown-item" href="#">Java</a></li>
-                            <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
-                            <li><a class="dropdown-item" href="#">SQL</a></li>
-                            <li><a class="dropdown-item" href="#">C</a></li>
-                            <li><a class="dropdown-item" href="#">Elixir</a></li>
-                        </ul>
-                    </div>
+                    <img src="CarlosC47352.jpg" alt="Picture of me!" class="img-fluid rounded-circle mb-3" />
+                    <h6>Welcome to my website! 👋</h6>
 
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Frameworks & Libraries
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pandas</a></li>
-                            <li><a class="dropdown-item" href="#">Matplotlib</a></li>
-                            <li><a class="dropdown-item" href="#">NumPy</a></li>
-                            <li><a class="dropdown-item" href="#">Beautiful Soup</a></li>
-                            <li><a class="dropdown-item" href="#">SQLite</a></li>
-                            <li><a class="dropdown-item" href="#">Flask</a></li>
-                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
-                        </ul>
+                    <!-- Social Links -->
+                    <div class="d-flex justify-content-center mt-3">
+                        <!-- GitHub Button -->
+                        <a href="https://github.com/CarandangC" target="_blank" class="mx-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 40px; height: 40px;" />
+                        </a>
+                        <!-- LinkedIn Button -->
+                        <a href="https://www.linkedin.com/in/ccarandang/" target="_blank" class="mx-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 40px; height: 40px;" />
+                        </a>
+                        <!-- Email Button -->
+                        <a href="mailto:carloscarandang@gmail.com" class="mx-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width: 40px; height: 40px;" />
+                        </a>
                     </div>
+                    <h4 class="mt-1">Resume</h4>
+                    <a href="Carlos_Carandang_Resume.pdf" download="Carlos_Carandang_Resume.pdf"
+                        class="btn btn-primary mb-2 w-100">Download PDF File</a>
 
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tools & OS
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Git</a></li>
-                            <li><a class="dropdown-item" href="#">VIM Editor</a></li>
-                            <li><a class="dropdown-item" href="#">Visual Studio Code</a></li>
-                            <li><a class="dropdown-item" href="#">Linux/Unix</a></li>
-                            <li><a class="dropdown-item" href="#">Windows</a></li>
-                            <li><a class="dropdown-item" href="#">Microsoft Office</a></li>
-                        </ul>
-                    </div>
-                </section>
+                    <section id="tech-stack" class="text-center">
+                        <h4>Tech Stack</h4>
+
+                        <!-- Dropdown Menu for Tech Stack -->
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Languages
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Python</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="#">Java</a></li>
+                                <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
+                                <li><a class="dropdown-item" href="#">SQL</a></li>
+                                <li><a class="dropdown-item" href="#">C</a></li>
+                                <li><a class="dropdown-item" href="#">Elixir</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Frameworks & Libraries
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pandas</a></li>
+                                <li><a class="dropdown-item" href="#">Matplotlib</a></li>
+                                <li><a class="dropdown-item" href="#">NumPy</a></li>
+                                <li><a class="dropdown-item" href="#">Beautiful Soup</a></li>
+                                <li><a class="dropdown-item" href="#">SQLite</a></li>
+                                <li><a class="dropdown-item" href="#">Flask</a></li>
+                                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-primary dropdown-toggle w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tools & OS
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Git</a></li>
+                                <li><a class="dropdown-item" href="#">VIM Editor</a></li>
+                                <li><a class="dropdown-item" href="#">Visual Studio Code</a></li>
+                                <li><a class="dropdown-item" href="#">Linux/Unix</a></li>
+                                <li><a class="dropdown-item" href="#">Windows</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Office</a></li>
+                            </ul>
+                        </div>
+                    </section>
             </div>
 
             <!-- Right Column: Main Content (About Me, Projects, etc.) -->
@@ -113,4 +135,5 @@
     <!-- Insert scripts.js -->
     <script src="scripts.js"></script>
 </body>
+
 </html>

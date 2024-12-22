@@ -37,7 +37,7 @@ document.getElementById('btnAbout').addEventListener('click', () => {
 // THIS IS WHERE YOU ADD MORE BUTTONS FOR WHEN U ADD PROJECTS
 document.getElementById('btnProjects').addEventListener('click', () => {
     const projectsDirectory = `
-        <h6 class='fade-in'>Here are some projects I have made over the years! Click on a project to see details:</h6>
+        <h6 class='fade-in'>Here are some projects! Click on a project to see more details:</h6>
         <div id="projectButtons">
             <button class="btn btn-secondary fade-in" id="btnTorontoHouseListing">Toronto House Listing Analysis</button>
             <button class="btn btn-secondary fade-in" id="btnSoundCheck">SoundCheck</button>
@@ -65,7 +65,10 @@ document.getElementById('btnProjects').addEventListener('click', () => {
 
                     After gathering all the information I needed to test these hypotheses, 
                     the data confirmed that the closer the house was to downtown Toronto, the higher the price. Additionally, the number of bedrooms and bathrooms also had a positive correlation with the price of the listing.<br><br>
-                    This project helped me gain a deeper understanding of data analytics and the real estate market in Toronto. You can find the full project and code on my <a href='https://github.com/CarandangC/Toronto-Market-Webscraper' target='_blank'>GitHub</a>.</p>
+                    This project helped me gain a deeper understanding of data analytics and the real estate market in Toronto. <br><br>
+                    
+                    You can find the full project and code on my Github <a href='https://github.com/CarandangC/Toronto-Market-Webscraper' target='_blank'>here</a>.<br>
+                    There is also a readme file that also explains my findings.</p>
                 </section>
             `;
             fadeOutAndUpdate(document.getElementById('projectDetails'), torontoHouseDetails);
