@@ -37,7 +37,7 @@ document.getElementById('btnAbout').addEventListener('click', () => {
 // THIS IS WHERE YOU ADD MORE BUTTONS FOR WHEN U ADD PROJECTS
 document.getElementById('btnProjects').addEventListener('click', () => {
     const projectsDirectory = `
-        <h6 class='fade-in'>Here are some projects! Click on a project to see more details:</h6>
+        <h6 class='fade-in'>Here are some of my projects! Click on a project to see more details:</h6>
         <div id="projectButtons">
             <button class="btn btn-secondary fade-in" id="btnTorontoHouseListing">Toronto House Listing Analysis</button>
             <button class="btn btn-secondary fade-in" id="btnSoundCheck">SoundCheck</button>
