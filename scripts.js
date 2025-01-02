@@ -43,6 +43,7 @@ document.getElementById('btnProjects').addEventListener('click', () => {
             <button class="btn btn-secondary fade-in" id="btnSoundCheck">SoundCheck</button>
             <button class="btn btn-secondary fade-in" id="btnCalorieCalculator">Carlorie Calculator</button>
             <button class="btn btn-secondary fade-in" id="btnPortfolioSite">Portfolio Website</button>
+            <button class="btn btn-secondary fade-in" id="btnSpotifyProject">DIY Spotify Wrapped</button>
 
         </div>
         <div id="projectDetails" class='fade-in'></div>
@@ -134,7 +135,28 @@ document.getElementById('btnProjects').addEventListener('click', () => {
             fadeOutAndUpdate(document.getElementById('projectDetails'), portfolioSite);
         });
 
+        //Spotify Wrapped
 
+        document.getElementById('btnSpotifyProject').addEventListener('click', () => {
+            const spotifyProject = `
+                <section class='fade-in'>
+                    <h3>DIY Spotify Wrapped</h3>
+                    <p>This was a project idea I wanted to start for a while because I love listening to music and I wanted to get some experience with PowerBI. So I patiently waited till the end of the year to get rquest my data from Spotify.<br><br>
+                    
+                    If you are not familliar with Spotify Wrapped, it is a yearly event that Spotify hosts where it tells you your listening history throughout the year. Mainly your most played artists and songs. I wanted to make something
+                    that replicated that using my own Spotify data. I also included a <strong>heatmap</strong> that shows what parts of the week I would listen to music the most. I also included a slider so you can choose the time frame of my listening history.<br><br>
+
+                    This project uses <strong>Microsoft PowerBI</strong> and some <strong>DAX</strong> functions.<br><br>
+
+                    What I learned about this project was just tinkering around with PowerBI and also learning about my own Spotify listening from certain time periods. It made me remember that during the summer I was addicted to this very specifc song called touch
+                    and I would play it all day everday! Thats probably the reason as to why it was my number one in the year of 2024 hahaha!<br><br>
+
+                    You can find my blog post in the readme file of the Github repo <a href='https://github.com/CarandangC/DIY-2024-Spotify-Wrapped'target='_blank'>here</a>.
+                    </p>
+                </section>
+            `;
+            fadeOutAndUpdate(document.getElementById('projectDetails'), spotifyProject);
+        });
         // Copy paste this if you need to add more projects!
         // Change the 'btnAnotherProject' to another name (ex. btn(name of project)) and then add that 
         // variable in the button navigation tab (line 40)
